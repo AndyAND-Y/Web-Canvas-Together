@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="The best realtime multi-user drawing canvas webapp. \nTry it out.">
+
+        <title>🎨 Draw With Friends 🎨</title>
+        
+        <link rel = "preload" as="script" href="obusfucated.js">
+        
+
+        <link href="style.css" rel="stylesheet">
+
+
+        <script defer src="/socket.io/socket.io.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script defer src="obusfucated.js"></script>
+        
+    </head>
+
+    <body >
+        <div id="mainContainer" class="centered">
+            <div>
+                
+                <div class="centered">
+                    <h1 id="socketIdLabel" >8U6PBi7REX62xlsGAACx</h1>
+                </div>
+                
+                <div class="centered">
+                    <input id ="colorBtn" class="drawControl" type="text" placeholder="Color Ex 0 0 255 (Blue)" value="" >
+                </div>
+            
+                <br/>
+                
+                <div class = "centered"  >
+                    <input id ="brushSizeBtn" class ="drawControl" type="text" placeholder="Brush Size" > 
+                </div>
+                <br/>
+                
+                <div class="centered">
+                    <button id = "resetBtn" class="btnClass">
+                        Reset
+                    </button>
+                    <button id = "downloadBtn" class="btnClass">
+                        Download
+                    </button>
+                </div>
+
+                <div id="drawingContainer"></div>
+
+            </div>
+        </div>
+        <br/>
+
+    </body>
+
+    
+    
+</html>

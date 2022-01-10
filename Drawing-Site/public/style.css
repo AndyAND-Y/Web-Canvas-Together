@@ -1,0 +1,58 @@
+.centered {
+  display: flex;
+  justify-content: center;
+}
+canvas {
+  outline: 10px;
+  outline-color: black;
+  outline-style: solid;
+}
+#drawingContainer {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+body {
+  background-image: url("128721.png");
+}
+#socketIdLabel {
+  color: white;
+  font-size: large;
+}
+
+.btnClass {
+  background-color: white;
+
+  outline: 1px;
+  outline-color: black;
+  outline-style: solid;
+
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.btnClass:hover {
+  background-color: rgb(48, 80, 144);
+  color: white;
+  outline-color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.drawControl {
+  color: black;
+  font-size: large;
+  outline: 3px;
+  outline-style: solid;
+  outline-color: black;
+}
+.drawControl:hover {
+  color: white;
+  outline-color: white;
+  background-color: rgb(48, 80, 144);
+}
