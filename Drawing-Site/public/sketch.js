@@ -66,7 +66,7 @@ let sketch = function(p)
             socket.emit('resize');
         }
     }
-    setInterval(p.refactorScreen,90);
+    setInterval(p.refactorScreen,750);
 };
 new p5(sketch,'drawingContainer');
 
